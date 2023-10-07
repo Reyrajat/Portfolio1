@@ -23,16 +23,20 @@
     .right-header{
         grid-row: 1;
         padding-right: 0rem !important;
-        width: 90%;
-        margin: 0 auto;
+        width: 100%;
+        // margin: 0 auto;
         .name{
             font-size: 2.5rem !important;
             text-align: center;
-            padding-top: 3rem;
+            width: auto;
+            margin-top: 0 !important;
+        }
+        .static{
+        font-size:1.5rem !important ;
         }
     }
     .header-content .left-header .image{
-        margin: 0 auto;
+        margin: o auto;
         width: 90%;
     }
 
@@ -52,15 +56,25 @@
 
     .about-container{
         grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 6rem;
+        margin-top: 1rem;
         .right-about{
-            grid-template-columns: repeat(1, 1fr);
-            padding-top: 2.5rem;
-        }
-        .left-about{
-            padding-right: 0;
-            p{
-                padding-left: 0;
+            text-align: center; 
+            img {
+                padding-left: 0 !important;
+                display: none;
             }
+        }
+
+        .left-about{
+         
+            p{
+                
+                text-align: justify !important;
+                font-size: small;
+            }
+            
+            
         }
     }
 
@@ -73,11 +87,6 @@
         padding: 2rem 2.5rem !important;
     }
 
-    .about-stats{
-        .progress-bars{
-            grid-template-columns: repeat(1, 1fr);
-        }
-    }
 
     .portfolios{
         grid-template-columns: repeat(1, 1fr);
